@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D I O N</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <h1>D I O N</h1>
+    </div>
+
+    <div class="main-content d-none">
+        <header class="modern-navbar">
+            <!-- Left-aligned logo -->
+            <h1 class="logo">DION</h1>
+        
+            <!-- Center-aligned Typing Effect -->
+            <div class="newsline">
+                <span id="dynamic-text"></span>
+            </div>
+        
+            <!-- Right-aligned icons -->
+            <div class="nav-icons">
+                <a href="https://github.com/dionchamika" target="_blank" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dion-chamika" target="_blank" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                
+                <a href="https://www.credly.com/users/dion-chamika" target="_blank" aria-label="Credly">
+                    <img src="assets/credly_logo.jpg" alt="Credly Badge" class="credly-icon">
+                </a>
+                
+                <a href="mailto:youremail@example.com" target="_blank" aria-label="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                
+                <a href="https://www.facebook.com/Dioc20" target="_blank" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/dionm720/" target="_blank" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </header>
+        
+        
+       
+        
+        <!-- Spacing below navbar -->
+        <div class="navbar-spacing"></div>
+        
+        <!-- Content Section -->
+        <section class="content-section text-center">
+            <div class="container">
+                <p>I am a cloud computing undergraduate at SLTC Research University, currently working as an Intern Cloud Support.</p>
+                <p>With a strong passion for cloud computing, DevOps, and software engineering, I have hands-on experience with AWS, GCP, Azure, Terraform, Docker, and CI/CD pipelines, as well as programming languages like Python, Java, and JavaScript.</p>
+                <p>My projects include IoT systems, AR applications, and e-commerce platforms with advanced deployment models. I enjoy solving challenges, building scalable solutions, and automating workflows. I am eager to expand my expertise and contribute as a Cloud DevOps Engineer to impactful projects in the tech industry.</p>
+                <button class="btn btn-primary" id="cv-button">Request CV</button>
+            </div>
+        </section>
+        
+
+    <!-- Contact Form Modal -->
+     <!-- CV Request Modal -->
+     <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cvModalLabel">Request CV</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Web3Forms Integration -->
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company:</label>
+                            <input type="text" class="form-control" id="company" name="company">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject:</label>
+                            <input type="text" class="form-control" id="subject" name="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer class="page-footer">
+    <p>
+        <i class="bi bi-c-circle copyright-icon"></i>2024
+    </p>
+</footer>
+
+</body>
+</html>
