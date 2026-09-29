@@ -336,26 +336,70 @@
         </p>
 
         <!-- Continuous footer ticker -->
-        <div class="footer-ticker">
-        <div class="ticker-track">
-            <div class="ticker-group">
-            <span>The Site is Under Developing</span>
-            <span>The Site is Under Developing</span>
-            <span>The Site is Under Developing</span>
-            <span>The Site is Under Developing</span>
-            <span>The Site is Under Developing</span>
-            </div>
+        
+            <style>
+            #dc-footer-ticker {
+                width: 100%;
+                overflow: hidden;
+                margin-top: 18px;
+                padding: 8px 0;
+                color: #888;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 1.6;
+            }
 
-            <!-- Identical copy for seamless scrolling -->
-            <div class="ticker-group" aria-hidden="true">
-            <span>The Site is Under Developing</span>
-            <span>The Site is Under Developing</span>
-            <span>The Site is Under Developing</span>
-            <span>The Site is Under Developing</span>
-            <span>The Site is Under Developing</span>
+            #dc-footer-ticker .dc-track {
+                display: flex;
+                width: max-content;
+                animation: dc-scroll 30s linear infinite;
+            }
+
+            #dc-footer-ticker .dc-group {
+                display: flex;
+                flex-shrink: 0;
+                justify-content: space-around;
+                min-width: 100vw;
+            }
+
+            #dc-footer-ticker span {
+                flex-shrink: 0;
+                white-space: nowrap;
+                font-size: 10px;
+                color: #888;
+            }
+
+            #dc-footer-ticker span::after {
+                content: " - ";
+                display: inline-block;
+                padding: 0 24px;
+            }
+
+            @keyframes dc-scroll {
+                from { transform: translateX(0); }
+                to   { transform: translateX(-50%); }
+            }
+            </style>
+
+            <div id="dc-footer-ticker">
+            <div class="dc-track">
+                <div class="dc-group">
+                <span>The Site is Under Developing</span>
+                <span>The Site is Under Developing</span>
+                <span>The Site is Under Developing</span>
+                <span>The Site is Under Developing</span>
+                <span>The Site is Under Developing</span>
+                </div>
+
+                <div class="dc-group" aria-hidden="true">
+                <span>The Site is Under Developing</span>
+                <span>The Site is Under Developing</span>
+                <span>The Site is Under Developing</span>
+                <span>The Site is Under Developing</span>
+                <span>The Site is Under Developing</span>
+                </div>
             </div>
-        </div>
-        </div>
+            </div>
 
     </footer>
 
